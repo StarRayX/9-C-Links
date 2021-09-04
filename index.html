@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9-C Links</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+
+</head>
+<body>
+    <div id="lightMode">
+      <p class="title">lmao imagine using lightmode lmao</p>
+    </div>
+    <section class="flexContainer mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="title">Drive Links</div>
+              <div class="driveLinks"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="clock" class="title">NA</div>
+                <a href="" target="_blank" id="getLink">Join Zoom</a>
+                <div class="circle"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="title">Activity Trackers</div>
+            </div>
+        </div>
+    </section>
+    <button id="colorButton">
+      lightmode do not click
+    </button>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        initialSlide: 1,
+        spaceBetween: 60,
+        coverflowEffect: {
+          rotate: 10,
+          stretch: 0,
+          depth: 250,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+</body>
+<script src="script.js"></script>
+</html>
