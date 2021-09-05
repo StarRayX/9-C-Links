@@ -1,6 +1,6 @@
 body {
     background-color: #1a1a1a;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 #colorButton {
     background-color: white;
-    position: absolute;
+    position: fixed;
     text-align: center;
     font-size: 25px;
     left: 90vh;
@@ -74,7 +74,7 @@ body {
 #lightMode {
     display: none;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     background-color: white;
     width: 100vw;
     height: 100vh;
@@ -126,4 +126,26 @@ body {
     width: 700px;
     height: 700px;
     top: 0%;
+}
+
+.schedule {
+    color: #e4e4e4;
+    border-radius: 35px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: #232323;
+    display: flex;
+    padding: 20px;
+    width: 1100px;
+    height: 500px;
+    overflow: hidden;
+
+}
+.scheduleWrapper {
+    margin-left: 20vh;
+    margin-right: 20vh;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
 }
