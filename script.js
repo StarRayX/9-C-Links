@@ -207,19 +207,19 @@ function showTime() {
     }
 
     //5th Period
-    if ((hour >= 11 && min >= 15) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+    if ((hour == 11 && min >= 15) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "Math";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
-    } else if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+    } else if ((hour == 11 && min >= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
         subject = "Math";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
-    } else if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+    } else if ((hour == 11 && min >= 20) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "TLE";
         link = "https://us04web.zoom.us/j/8089598889?pwd=ck83Z0NZaEJnQmFyaTQwQkovdUxJQT09";
-    } else if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+    } else if ((hour == 11 && min >= 20) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
         subject = "English";
         link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
-    } else if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+    } else if ((hour == 11 && min >= 20) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
         subject = "Math";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
     }
