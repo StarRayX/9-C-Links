@@ -30,7 +30,7 @@ function showTime() {
         weekday[2] = "Tuesday";
         weekday[3] = "Wednesday";
         weekday[4] = "Friday";
-        weekday[5] = "Friday";
+        weekday[5] = "Thursday";
         weekday[6] = "Saturday";
 
     //variable for Subject display
@@ -41,7 +41,7 @@ function showTime() {
     var isWeekend = Boolean(displayDay == "Friday");
     if (displayDay == "Saturday") {
         isWeekend = true
-    } else if (displayDay == Thursday && hour >= 3) {
+    } else if (displayDay == "Thursday" && hour >= 3) {
         isWeekend = true
     };
 
