@@ -275,7 +275,7 @@ function showTime() {
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
     }
 
-    if ((hour == 01 && min <= 20) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
+    if ((hour == 01 && min < 20) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
         subject = "Math - FLD";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
     } else if ((hour == 01 && min <= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
