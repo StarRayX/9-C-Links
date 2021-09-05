@@ -24,7 +24,8 @@ function showTime() {
     let currentTime = hour + ":" 
             + min + " "+ am_pm;
     
-    console.log(hour)
+    console.log(hour);
+
     var weekday = new Array(7);
         weekday[0] = "Sunday";
         weekday[1] = "Monday";
@@ -61,7 +62,6 @@ function showTime() {
     if ((hour <= 8) && (hour >= 7 && (min >= 50 || min == 00)) && !isWeekend) {
         subject = "Attendance";
         link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09"
-        console.log("wow")
     };
 
     //Advisers Period
