@@ -88,23 +88,38 @@ function showTime() {
     };
 
     //Second Period
-    if ((hour == 9 && min <= 30) && (hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+    if ((hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "Filipino - FLD";
         link = "";
-    } else if ((hour == 9 && min <= 30) && (hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+    } else if ((hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
         subject = "ICT - FLD";
         link = "";
-    } else if ((hour == 9 && min <= 30) && (hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+    } else if ((hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "MEC - FLD";
         link = "";
-    } else if ((hour == 9 && min <= 30) && (hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+    } else if ((hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
         subject = "Filipino - FLD";
         link = "";
-    } else if ((hour == 9 && min <= 30) && (hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+    } else if ((hour >= 8 && min >= 50) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
         subject = "Science - FLD";
         link = "";
     };
-
+    if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+        subject = "Filipino - FLD";
+        link = "";
+    } else if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+        subject = "ICT - FLD";
+        link = "";
+    } else if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+        subject = "MEC - FLD";
+        link = "";
+    } else if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+        subject = "Filipino - FLD";
+        link = "";
+    } else if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+        subject = "Science - FLD";
+        link = "";
+    };
     //Break
     if ((hour == 9 && min >= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "Morning Break";
@@ -139,39 +154,87 @@ function showTime() {
         subject = "Arabic";
         link = "";
     };
+    if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+        subject = "English";
+        link = "";
+    } else if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+        subject = "PE";
+        link = "";
+    } else if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+        subject = "English - REC";
+        link = "";
+    } else if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+        subject = "Arabic";
+        link = "";
+    } else if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+        subject = "Arabic";
+        link = "";
+    };
 
     //Fourth Period
-    if ((hour == 11 && min <= 15) && (hour >= 10 && min >= 35) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+    if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "English FLD";
         link = "";
-    } else if ((hour == 11 && min <= 15) && (hour >= 10 && min >= 35) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+    } else if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
         subject = "PE - FLD";
         link = "";
-    } else if ((hour == 11 && min <= 15) && (hour >= 10 && min >= 35) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+    } else if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "Filipino - REC";
         link = "";
-    } else if ((hour == 11 && min <= 15) && (hour >= 10 && min >= 35) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+    } else if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
         subject = "Arabic - FLD";
         link = "";
-    } else if ((hour == 11 && min <= 15) && (hour >= 10 && min >= 35) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+    } else if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+        subject = "Arabic - FLD";
+        link = "";
+    }
+    if ((hour == 11 && min <= 15) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+        subject = "English FLD";
+        link = "";
+    } else if ((hour == 11 && min <= 15) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+        subject = "PE - FLD";
+        link = "";
+    } else if ((hour == 11 && min <= 15) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+        subject = "Filipino - REC";
+        link = "";
+    } else if ((hour == 11 && min <= 15) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+        subject = "Arabic - FLD";
+        link = "";
+    } else if ((hour == 11 && min <= 15) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
         subject = "Arabic - FLD";
         link = "";
     }
 
     //5th Period
-    if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+    if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "Math";
         link = "";
-    } else if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+    } else if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
         subject = "Math";
         link = "";
-    } else if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+    } else if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "TLE";
         link = "";
-    } else if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+    } else if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
         subject = "English";
         link = "";
-    } else if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+    } else if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+        subject = "Math";
+        link = "";
+    }
+    if ((hour == 12) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+        subject = "Math";
+        link = "";
+    } else if ((hour == 12) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+        subject = "Math";
+        link = "";
+    } else if ((hour == 12) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+        subject = "TLE";
+        link = "";
+    } else if ((hour == 12) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+        subject = "English";
+        link = "";
+    } else if ((hour == 12) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
         subject = "Math";
         link = "";
     }
