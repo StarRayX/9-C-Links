@@ -172,7 +172,7 @@ function showTime() {
     };
 
     //Fourth Period
-    if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+    if ((hour == 10 && min >= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "English FLD";
         link = "";
     } else if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
@@ -188,19 +188,19 @@ function showTime() {
         subject = "Arabic - FLD";
         link = "";
     };
-    if ((hour <= 11 && min <= 15) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+    if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "English FLD";
         link = "";
-    } else if ((hour == 11 && min <= 15) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+    } else if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
         subject = "PE - FLD";
         link = "";
-    } else if ((hour == 11 && min <= 15) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+    } else if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "Filipino - REC";
         link = "";
-    } else if ((hour == 11 && min <= 15) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+    } else if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
         subject = "Arabic - FLD";
         link = "";
-    } else if ((hour == 11 && min <= 15) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+    } else if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
         subject = "Arabic - FLD";
         link = "";
     }
