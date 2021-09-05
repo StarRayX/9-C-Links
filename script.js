@@ -206,7 +206,7 @@ function showTime() {
     }
 
     //5th Period
-    if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+    if ((hour >= 11 && min >= 15) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "Math";
         link = "";
     } else if ((hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
