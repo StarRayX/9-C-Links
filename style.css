@@ -52,6 +52,11 @@ body {
     width: 150px;
     z-index: 3;
 }
+hr {
+    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(1, rgb(255,63,123)), color-stop(0.1, rgb(94,40,199)));
+    padding: 2px;
+    border: none;
+}
 .title {
     font-size: 40px;
     font-family: 'Raleway';
@@ -148,4 +153,32 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 200px;
+}
+
+.driveLink {
+    color: #e4e4e4;
+    font-weight: 700;
+    text-decoration: none;
+    background: #e4e4e4;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.driveLink:hover {
+    animation-name: gradient;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    transition: 0.7s !important;
+}
+@keyframes gradient {
+    0% {
+        background: #e4e4e4;
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    100% {
+        background: linear-gradient(90deg, rgba(255,63,123,1) 0%, rgba(98,40,199,1) 100%);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
 }
