@@ -123,19 +123,19 @@ function showTime() {
     };
 
     //Third Period
-    if ((hour == 10 && min <= 30) && (hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+    if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "English";
         link = "";
-    } else if ((hour == 10 && min <= 30) && (hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+    } else if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
         subject = "PE";
         link = "";
-    } else if ((hour == 10 && min <= 30) && (hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+    } else if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "English - REC";
         link = "";
-    } else if ((hour == 10 && min <= 30) && (hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+    } else if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
         subject = "Arabic";
         link = "";
-    } else if ((hour == 10 && min <= 30) && (hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+    } else if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
         subject = "Arabic";
         link = "";
     };
