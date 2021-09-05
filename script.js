@@ -24,7 +24,7 @@ function showTime() {
     let currentTime = hour + ":" 
             + min + " "+ am_pm;
     
-    console.log(min);
+    console.log(min)
     var weekday = new Array(7);
         weekday[0] = "Sunday";
         weekday[1] = "Monday";
@@ -109,15 +109,15 @@ function showTime() {
     if ((hour == 9 && min >= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
         subject = "Morning Break";
         link = "";
-    } else if ((hour == 9 && min <= 50) && (hour == 9 && min >= 30) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+    } else if ((hour == 9 && min >= 30) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
         subject = "Morning Break";
         link = "";
-    } else if ((hour == 9 && min <= 50) && (hour == 9 && min >= 30) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+    } else if ((hour == 9 && min >= 30) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "Morning Break";
         link = "";
-    } else if ((hour == 9 && min <= 50) && (hour == 9 && min >= 30) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+    } else if ((hour == 9 && min >= 30) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
         subject = "Morning Break"
-    } else if ((hour == 9 && min <= 50) && (hour == 9 && min >= 30) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+    } else if ((hour == 9 && min >= 30) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
         subject = "Morning Break";
         link = "";
     };
