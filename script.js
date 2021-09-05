@@ -241,19 +241,19 @@ function showTime() {
     }
 
     //lunch Break
-    if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+    if ((hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
         subject = "Lunch Break";
         link = "";
-    } else if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+    } else if ((hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
         subject = "Lunch Break";
         link = "";
-    } else if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+    } else if ((hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
         subject = "Lunch Break";
         link = "";
-    } else if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+    } else if ((hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
         subject = "Lunch Break";
         link = "";
-    } else if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+    } else if ((hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Thursday") && am_pm == "PM") {
         subject = "Lunch Break";
         link = "";
     }
@@ -276,19 +276,19 @@ function showTime() {
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
     }
 
-    if ((hour <= 13 && min <= 20) && !isWeekend && (displayDay == "Sunday")) {
+    if ((hour == 13 && min <= 20) && !isWeekend && (displayDay == "Sunday")) {
         subject = "Math - FLD";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
-    } else if ((hour <= 13 && min <= 20) && !isWeekend && (displayDay == "Monday")) {
+    } else if ((hour == 13 && min <= 20) && !isWeekend && (displayDay == "Monday")) {
         subject = "Science - FLD";
         link = "https://bit.ly/TPS-Science_MsDonna";
-    } else if ((hour <= 13 && min <= 20) && !isWeekend && (displayDay == "Tuesday")) {
+    } else if ((hour == 13 && min <= 20) && !isWeekend && (displayDay == "Tuesday")) {
         subject = "TLE - FLD";
         link = "https://us04web.zoom.us/j/8089598889?pwd=ck83Z0NZaEJnQmFyaTQwQkovdUxJQT09";
-    } else if ((hour <= 13 && min <= 20) && !isWeekend && (displayDay == "Wednesday")) {
+    } else if ((hour == 13 && min <= 20) && !isWeekend && (displayDay == "Wednesday")) {
         subject = "English - FLD";
         link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
-    } else if ((hour <= 13 && min <= 20) && !isWeekend && (displayDay == "Thursday")) {
+    } else if ((hour == 13 && min <= 20) && !isWeekend && (displayDay == "Thursday")) {
         subject = "Math - FLD";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
     }
