@@ -156,7 +156,97 @@ function showTime() {
         subject = "Arabic - FLD";
         link = "";
     }
+
+    //5th Period
+    if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+        subject = "Math";
+        link = "";
+    } else if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+        subject = "Math";
+        link = "";
+    } else if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+        subject = "TLE";
+        link = "";
+    } else if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+        subject = "English";
+        link = "";
+    } else if ((hour <= 12) && (hour >= 11 && min >= 20) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+        subject = "Math";
+        link = "";
+    }
+
+    //lunch Break
+    if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
+        subject = "Lunch Break";
+        link = "";
+    } else if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+        subject = "Lunch Break";
+        link = "";
+    } else if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
+        subject = "Lunch Break";
+        link = "";
+    } else if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
+        subject = "Lunch Break";
+        link = "";
+    } else if ((hour == 12 && min <= 40) && (hour >= 12 && min >= 00) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+        subject = "Lunch Break";
+        link = "";
+    }
+
+    //6th Period
+    if ((hour <= 13 && min <= 20) && (hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Sunday")) {
+        subject = "Math - FLD";
+        link = "";
+    } else if ((hour <= 13 && min <= 20) && (hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Monday")) {
+        subject = "Science - FLD";
+        link = "";
+    } else if ((hour <= 13 && min <= 20) && (hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Tuesday")) {
+        subject = "TLE - FLD";
+        link = "";
+    } else if ((hour <= 13 && min <= 20) && (hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Wednesday")) {
+        subject = "English - FLD";
+        link = "";
+    } else if ((hour <= 13 && min <= 20) && (hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Thursday")) {
+        subject = "Math - FLD";
+        link = "";
+    }
+
+    //7th Period
+    if ((hour <= 2) && (hour >= 1 && min >= 25) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
+        subject = "AP";
+        link = "";
+    } else if ((hour <= 2) && (hour >= 1 && min >= 25) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
+        subject = "AP";
+        link = "";
+    } else if ((hour <= 2) && (hour >= 1 && min >= 25) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
+        subject = "Math - REC";
+        link = "";
+    } else if ((hour <= 2) && (hour >= 1 && min >= 25) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
+        subject = "Music";
+        link = "";
+    } else if ((hour <= 2) && (hour >= 1 && min >= 25) && !isWeekend && (displayDay == "Thursay") && am_pm == "PM") {
+        subject = "UAE SS";
+        link = "";
+    }
     
+    //8th Period
+    if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
+        subject = "AP";
+        link = "";
+    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
+        subject = "AP - REC";
+        link = "";
+    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
+        subject = "Science - REC";
+        link = "";
+    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
+        subject = "Arts";
+        link = "";
+    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Thursay") && am_pm == "PM") {
+        subject = "UAE SS - FLD";
+        link = "";
+    }
+
     document.getElementById("clock")
             .innerHTML = subject + '<br>' + '<h5 class="time">' + currentTime + '</h5>';
     
