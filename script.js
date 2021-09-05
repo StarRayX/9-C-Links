@@ -327,19 +327,19 @@ function showTime() {
     }
 
     //8th Period
-    if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
+    if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
         subject = "AP";
         link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
-    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
+    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
         subject = "AP - REC";
         link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
-    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
+    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
         subject = "Science - REC";
         link = "https://bit.ly/TPS-Science_MsDonna";
-    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
+    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
         subject = "Arts";
         link = "https://us02web.zoom.us/j/89877661443?pwd=T0VlNGNtYlFyUTNsN2l0aGdvUWlFUT09";
-    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 10) && !isWeekend && (displayDay == "Thursay") && am_pm == "PM") {
+    } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Thursay") && am_pm == "PM") {
         subject = "UAE SS - FLD";
         link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     }
