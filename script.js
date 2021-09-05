@@ -57,7 +57,7 @@ function showTime() {
     };
 
     //Attendance Period
-    if ((hour == 8 && min <= 00) && (hour >= 7 && min >= 50) && !isWeekend) {
+    if ((hour <= 8) && (hour >= 7 && min >= 50) && !isWeekend) {
         subject = "Attendance";
         link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09"
     };
