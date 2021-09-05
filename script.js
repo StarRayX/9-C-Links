@@ -24,7 +24,7 @@ function showTime() {
     let currentTime = hour + ":" 
             + min + " "+ am_pm;
     
-    console.log(hour);
+    console.log(min);
 
     var weekday = new Array(7);
         weekday[0] = "Sunday";
