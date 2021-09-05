@@ -293,19 +293,19 @@ function showTime() {
     }
 
     //7th Period
-    if ((hour == 01 && min >= 25) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
+    if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
         subject = "AP";
         link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
-    } else if ((hour == 01 && min >= 25) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
+    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
         subject = "AP";
         link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
-    } else if ((hour == 01 && min >= 25) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
+    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
         subject = "Math - REC";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
-    } else if ((hour == 01 && min >= 25) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
+    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
         subject = "Music";
         link = "https://us02web.zoom.us/j/89877661443?pwd=T0VlNGNtYlFyUTNsN2l0aGdvUWlFUT09";
-    } else if ((hour == 01 && min >= 25) && !isWeekend && (displayDay == "Thursay") && am_pm == "PM") {
+    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Thursay") && am_pm == "PM") {
         subject = "UAE SS";
         link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     }
