@@ -41,7 +41,7 @@ function showTime() {
     var isWeekend = Boolean(displayDay == "Friday");
     if (displayDay == "Saturday") {
         isWeekend = true
-    } else if (hour >= 3) {
+    } else if (displayDay == Thursday && hour >= 3) {
         isWeekend = true
     };
 
@@ -50,7 +50,13 @@ function showTime() {
         subject = "Bro it's weekend why are you here?"
     };
 
-    //Pre-class Period
+    //Pre-Class Period
+    if ((hour == 7 && min < 50) && (hour >= 0 && min >= 01) && !isWeekend) {
+        subject = "Class Starts at 7:50";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09"
+    };
+
+    //Attendance Period
     if ((hour == 8 && min <= 00) && (hour >= 7 && min >= 50) && !isWeekend) {
         subject = "Attendance";
         link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09"
@@ -59,7 +65,7 @@ function showTime() {
     //Advisers Period
     if ((hour == 8 && min <= 05) && (hour == 8 && min >= 00) && !isWeekend) {
         subject = "Advisers period";
-        link = ""
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09"
     };
 
     //First Period
