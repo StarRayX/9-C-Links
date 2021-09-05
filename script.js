@@ -257,22 +257,6 @@ function showTime() {
         subject = "Lunch Break";
         link = "";
     }
-    if ((hour == 12 && min <= 40) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
-        subject = "Lunch Break";
-        link = "";
-    } else if ((hour == 12 && min <= 40) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
-        subject = "Lunch Break";
-        link = "";
-    } else if ((hour == 12 && min <= 40) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
-        subject = "Lunch Break";
-        link = "";
-    } else if ((hour == 12 && min <= 40) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
-        subject = "Lunch Break";
-        link = "";
-    } else if ((hour == 12 && min <= 40) && !isWeekend && (displayDay == "Thursday") && am_pm == "PM") {
-        subject = "Lunch Break";
-        link = "";
-    }
     //6th Period
     if ((hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Sunday")) {
         subject = "Math - FLD";
