@@ -227,3 +227,72 @@ td a {
     font-weight: 700;
     color: #e4e4e4;
 }
+
+.zoom:hover {
+    animation-name: zoomAnim;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.fld:hover {
+    animation-name: fldAnim;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.rec:hover {
+    animation-name: recAnim;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.zoom:hover a {
+    animation-name: zoomAnim;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.fld:hover a {
+    animation-name: fldAnim;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.rec:hover a {
+    animation-name: recAnim;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomAnim {
+    0% {
+        background: #232323;
+    }
+    100% {
+        background: #93c47d;
+        color: #232323;
+        font-weight: 700;
+    }
+}
+@keyframes fldAnim {
+    0% {
+        background: #232323;
+    }
+    100% {
+        background: #ffd966;
+        color: #232323;
+        font-weight: 700;
+    }
+}
+@keyframes recAnim {
+    0% {
+        background: #232323;
+    }
+    100% {
+        background: #dd7e6b;
+        color: #232323;
+        font-weight: 700;
+    }
+}
