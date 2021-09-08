@@ -195,3 +195,7 @@ hr {
     -webkit-text-fill-color: transparent;
     }
 }
+td a {
+    color: #e4e4e4;
+    text-decoration: none;
+}
