@@ -30,7 +30,7 @@ $(function() {
 });
 
 function getQuote(quote) {
-    var url = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?';
+    var url = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?';
     $.getJSON(url, function(data) {
         quote.html("\""+ data.quoteText+"\"");
     });
