@@ -64,8 +64,8 @@ function showTime() {
         weekday[1] = "Monday";
         weekday[2] = "Tuesday";
         weekday[3] = "Wednesday";
-        weekday[4] = "Friday";
-        weekday[5] = "Thursday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
         weekday[6] = "Saturday";
 
     //variable for Subject display
