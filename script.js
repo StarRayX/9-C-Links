@@ -77,7 +77,7 @@ function showTime() {
     var isWeekend = Boolean(displayDay == "Friday");
     if (displayDay == "Saturday") {
         isWeekend = true
-    } else if (displayDay == "Thursday" && hour >= 3 && min >= 01 && am_pm == "PM") {
+    } else if (displayDay == "Thursday" && hour == 3 && min >= 01 && am_pm == "PM") {
         isWeekend = true
     };
 
