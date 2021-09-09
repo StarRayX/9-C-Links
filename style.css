@@ -226,6 +226,8 @@ td a {
     font-family: 'Raleway';
     font-weight: 700;
     color: #e4e4e4;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .zoom:hover {

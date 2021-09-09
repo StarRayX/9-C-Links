@@ -22,7 +22,8 @@ $(function() {
     min = min < 10 ? "0" + min : min;
 
     var quote = $('.quote-text');
-    if (hour >= 12 && min >= 01 && am_pm == "AM") {
+    getQuote(quote);
+    if (hour >= 0 && min >= 01 && am_pm == "AM") {
         event.preventDefault();
         getQuote(quote);
     };
