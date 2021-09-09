@@ -221,13 +221,15 @@ td a {
 }
 
 .quote-text {
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
     font-family: 'Raleway';
+    font-style: italic;
     font-weight: 700;
     color: #e4e4e4;
     padding-left: 200px;
     padding-right: 200px;
+    margin: 100px;
 }
 
 .zoom:hover {
