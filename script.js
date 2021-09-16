@@ -381,8 +381,13 @@ function showTime() {
     document.getElementById("clock")
             .innerHTML = subject + '<br>' + '<h5 class="time">' + currentTime + '</h5>';
     
-    
-    
+    var dababyBool = Boolean(Cookies.get('daBaby') === "true")
+    var atten = document.getElementById("attendance");
+    if (dababyBool) {
+        atten.style.display = "block";
+    } else {
+        atten.style.display = "none";
+    }
 
 }
 var lightModeStatus = false;
@@ -404,6 +409,24 @@ function lightMode() {
 
 document.getElementById("colorButton").addEventListener("click", lightMode);
 
+
+//cookies
+var isDababy = false;
+
+function oCookie() {
+    Cookies.set('daBaby', isDababy, { expires: 10000000 })
+    if (isDababy == false) {
+        isDababy = true
+    } else {
+        isDababy = false
+    }
+
+    console.log(Cookies.get('daBaby'))
+};
+
+document.getElementById("smile").addEventListener("click", oCookie);
+
+
 function updateLink() {
 
     if (!link) {
@@ -416,3 +439,22 @@ document.getElementById("getLink").addEventListener("click", updateLink);
 
 
 showTime();
+plyr.setup("#plyr-video");
+  function removeLoader(){
+      
+      $( "#loader" ).fadeOut(500, function() {
+        // fadeOut complete. Remove the loading div
+        $( "#loader" ).remove(); //makes page more lightweight 
+        $('html, body').css({
+            'overflow': 'auto',
+            'height': 'auto',
+            'overflow-x': 'hidden'
+          })
+    });  
+  }
+
+function hideNotif() {
+    document.getElementById("notif").style.display = "none";
+}
+
+document.getElementById("hideNotif").addEventListener("click", hideNotif);

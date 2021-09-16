@@ -13,6 +13,8 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.15/plyr.css">
+    <link rel="stylesheet" type="text/css" href="loading.min.css"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V332EL9GLM"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,10 +25,32 @@
 
       gtag('config', 'G-V332EL9GLM');
     </script>
+    <script>
+      $(window).on('load', function(){
+    setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+    $('html, body').css({
+        'overflow': 'hidden',
+        'height': '100%'
+      })
+  });
+    </script>
 </head>
 <body>
+    <div class="loaderWrapper" id="loader">
+      <div class="lds-ripple"><div></div><div></div></div>
+    </div>
     <div id="lightMode">
       <p class="title">lmao imagine using lightmode lmao</p>
+      <button id="smile">
+        =)
+      </button>
+    </div>
+    <div class="notif" id="notif">
+      <div class="titleSmall">What's new?</div>
+      <div class="content">-Added Video of The Week<br><br>-Added "What's New" panel<br><br>-Added Officer's Attendance<br>link (officers only)</div>
+      <button id="hideNotif">
+        hide notif
+      </button>
     </div>
     <section class="flexContainer mySwiper">
         <div class="swiper-wrapper">
@@ -180,6 +204,16 @@
           </table>
       </div>
     </div>
+    <div class="votwWrapper">
+      <div class="title" style="margin: 50px;" >Video of The Week</div>
+      <video id="plyr-video" controls>
+        <source src="media/votw.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div id="attendance" style="display: none;">
+      <div class="title" style="text-align: center; ">Attendance <br><br></div>
+      <iframe src="https://docs.google.com/spreadsheets/d/1ObI4fTVHzz0jnpmoDgF7ijwisO2XTPuoieR3nhbm8Qw?rm=minimal&amp;widget=true&amp;headers=false"></iframe>
+    </div>
     <button id="colorButton">
       <img src="images/sun.png" alt="light mode" id="lighticon">
     </button>
@@ -189,8 +223,7 @@
 		  max: 0.1,
 		  speed: 0.1
 	  });
-	
-	//It also supports NodeList
+
 	VanillaTilt.init(document.querySelectorAll(".schedule"));
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -214,7 +247,13 @@
         },
       });
     </script>
-
+    <script>
+      $(window).on('load', function () {
+        $('#loading').hide();
+      }) 
+    </script>
 </body>
+<script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
+<script src="js.cookie.min.js"></script>
 <script src="script.js"></script>
 </html>

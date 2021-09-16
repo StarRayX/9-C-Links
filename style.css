@@ -1,6 +1,6 @@
-body {
+html, body {
     background-color: #1a1a1a;
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 0;
 }
 ::-webkit-scrollbar {
@@ -72,7 +72,7 @@ body {
     top: 92.5vh;
     height: 5vh;
     width: 5vh;
-    z-index: 3;
+    z-index: 13;
     border: 0;
     border-radius: 100vh;
     cursor: pointer;
@@ -99,6 +99,21 @@ hr {
     transform: translate3d(0,0,75px);
     z-index: 11;
 }
+.titleSmall {
+    font-size: 30px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #e4e4e4;
+    z-index: 11;
+    margin-bottom: 10px; 
+}
+
+.content {
+    color: #e4e4e4;
+    font-size: 15px;
+    font-family: 'Raleway';
+    justify-content: center;
+}
 
 @keyframes flicker {
     0%, 40%, 80%{
@@ -111,7 +126,7 @@ hr {
 
 #lightMode {
     display: none;
-    z-index: 2;
+    z-index: 11;
     position: fixed;
     background-color: white;
     width: 100vw;
@@ -185,7 +200,16 @@ hr {
     padding: 20px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 75px;
+}
+
+#smile {
+    border: 0;
+    background: none;
+    font-family: 'Raleway';
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 .driveLink {
@@ -218,6 +242,33 @@ hr {
 td a {
     color: #e4e4e4;
     text-decoration: none;
+}
+
+.attendance {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: none;
+    padding: 50px;
+    background-color: #232323;
+}
+
+iframe {
+    margin: 0 auto;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    display: block;
+    width: 70vw;
+    height: 80vh;
+    background-color: #232323;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+body .docs-gm {
+    background-color: #232323 !important;
 }
 
 .quote-text {
@@ -300,3 +351,93 @@ td a {
         font-weight: 700;
     }
 }
+
+.votwWrapper {
+    margin: 150px auto;
+    margin-top: 100px !important;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    display: block;
+    width: 1280px;
+    height: 720px;
+
+}
+.plyr video {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 35px !important;
+}
+.plyr__video-wrapper {
+    border-radius: 35px !important;
+}
+.plyr--video .plyr__controls {
+    border-radius: 0px 0px 35px 35px !important;
+    padding: 50px 20px 20px !important;
+}
+.notif {
+    position: fixed;
+    background-color: #232323;
+    border-radius: 35px;
+    width: 200px;
+    height: 300px;
+    padding: 30px;
+    right: 10px;
+    bottom: 20px;
+    z-index: 10;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+}
+
+.loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    margin: 0 auto;
+    transform: scale(2.5);
+}
+.loaderWrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a1a1a;
+    z-index: 11;
+}
+.lds-ripple {
+    top: 50%;
+    z-index: 100;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #e4e4e4;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+  
