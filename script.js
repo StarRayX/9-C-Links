@@ -458,3 +458,10 @@ function hideNotif() {
 }
 
 document.getElementById("hideNotif").addEventListener("click", hideNotif);
+
+function submitName() {
+    var xmlhttp;
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp.open("GET", "insert.php?nm"+document.getElementById("name").value+"&ct=" , false);
+    xmlhttp.send(null);
+}
