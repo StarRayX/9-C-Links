@@ -78,6 +78,9 @@ function showTime() {
         isWeekend = true
     };
 
+    //variable for subject display
+    var subject = "NaN";
+
     //Applies weekend action
     if (isWeekend) {
         subject = "Bro it's weekend why are you here?"
