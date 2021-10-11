@@ -89,19 +89,19 @@ function showTime() {
     //Pre-Class Period
     if ((hour == 7 && min < 50) && (hour >= 0 && min >= 01) && !isWeekend && am_pm == "AM") {
         subject = "Class Starts at 7:50";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09"
+        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09"
     };
 
     //Attendance Period
     if ((hour <= 8) && (hour >= 7 && (min >= 50 || min == 00)) && !isWeekend && am_pm == "AM") {
         subject = "Attendance";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09"
+        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09"
     };
 
     //Advisers Period
     if ((hour == 8 && min <= 05) && (hour == 8 && min >= 00) && !isWeekend && am_pm == "AM") {
         subject = "Advisers period";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09"
+        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09"
     };
 
     //First Period
