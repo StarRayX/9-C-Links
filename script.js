@@ -92,68 +92,62 @@ function showTime() {
         link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09"
     };
 
-    //Attendance Period
-    if ((hour <= 8) && (hour >= 7 && (min >= 50 || min == 00)) && !isWeekend && am_pm == "AM") {
-        subject = "Attendance";
-        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09"
-    };
-
     //Advisers Period
-    if ((hour == 8 && min <= 05) && (hour == 8 && min >= 00) && !isWeekend && am_pm == "AM") {
+    if ((hour <= 8 && min <= 05) && (hour >= 7 && (min >= 50 || min == 00)) && !isWeekend && am_pm == "AM") {
         subject = "Advisers period";
         link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09"
     };
 
     //First Period
     if ((hour == 8 && min <= 45) && (hour == 8 && min >= 05) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
-        subject = "Filipino";
-        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+        subject = "English";
+        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
     } else if ((hour == 8 && min <= 45) && (hour == 8 && min >= 05) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+        subject = "TLE";
+        link = "https://us04web.zoom.us/j/8089598889?pwd=ck83Z0NZaEJnQmFyaTQwQkovdUxJQT09";
+    } else if ((hour == 8 && min <= 45) && (hour == 8 && min >= 05) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "ICT";
         link = "https://us04web.zoom.us/j/5974021172?pwd=dmh0cDRkaGUxYUphWUh0UGFrYjF1QT09";
-    } else if ((hour == 8 && min <= 45) && (hour == 8 && min >= 05) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
-        subject = "MEC";
-        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09";
     } else if ((hour == 8 && min <= 45) && (hour == 8 && min >= 05) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
-        subject = "Filipino";
-        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+        subject = "English";
+        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
     } else if ((hour == 8 && min <= 45) && (hour == 8 && min >= 05) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
-        subject = "Science"
-        link = "https://bit.ly/TPS-Science_MsDonna";
+        subject = "Math"
+        link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
     };
 
     //Second Period
     if ((hour >= 8 && min >= 45) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
-        subject = "Filipino - FLD";
-        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+        subject = "English - FLD";
+        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
     } else if ((hour >= 8 && min >= 45) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+        subject = "TLE - FLD";
+        link = "https://us04web.zoom.us/j/8089598889?pwd=ck83Z0NZaEJnQmFyaTQwQkovdUxJQT09";
+    } else if ((hour >= 8 && min >= 45) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "ICT - FLD";
         link = "https://us04web.zoom.us/j/5974021172?pwd=dmh0cDRkaGUxYUphWUh0UGFrYjF1QT09";
-    } else if ((hour >= 8 && min >= 45) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
-        subject = "MEC - FLD";
-        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09";
     } else if ((hour >= 8 && min >= 45) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
-        subject = "Filipino - FLD";
-        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+        subject = "English - FLD";
+        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
     } else if ((hour >= 8 && min >= 45) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
-        subject = "Science - FLD";
-        link = "https://bit.ly/TPS-Science_MsDonna";
+        subject = "Math - FLD"
+        link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
     };
     if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
-        subject = "Filipino - FLD";
-        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+        subject = "English - FLD";
+        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
     } else if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
+        subject = "TLE - FLD";
+        link = "https://us04web.zoom.us/j/8089598889?pwd=ck83Z0NZaEJnQmFyaTQwQkovdUxJQT09";
+    } else if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
         subject = "ICT - FLD";
         link = "https://us04web.zoom.us/j/5974021172?pwd=dmh0cDRkaGUxYUphWUh0UGFrYjF1QT09";
-    } else if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
-        subject = "MEC - FLD";
-        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09";
     } else if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
-        subject = "Filipino - FLD";
-        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+        subject = "English - FLD";
+        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
     } else if ((hour == 9 && min <= 30) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
-        subject = "Science - FLD";
-        link = "https://bit.ly/TPS-Science_MsDonna";
+        subject = "Math - FLD"
+        link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
     };
     //Break
     if ((hour == 9 && min >= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
@@ -174,104 +168,104 @@ function showTime() {
 
     //Third Period
     if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
-        subject = "English";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
+        subject = "Arabic";
+        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
     } else if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
-        subject = "PE";
-        link = "https://us02web.zoom.us/j/87052704208?pwd=NTVkN0c4RXhDWXZlRXNvRUZLWmtPUT09";
+        subject = "AP";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     } else if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
-        subject = "English - REC";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
+        subject = "Science - REC";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     } else if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
-        subject = "Arabic";
-        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+        subject = "UAE SS";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     } else if ((hour >= 9 && min >= 50) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
-        subject = "Arabic";
-        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+        subject = "AP";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     };
     if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
-        subject = "English";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
+        subject = "Arabic";
+        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
     } else if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
-        subject = "PE";
-        link = "https://us02web.zoom.us/j/87052704208?pwd=NTVkN0c4RXhDWXZlRXNvRUZLWmtPUT09";
+        subject = "AP";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     } else if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
-        subject = "English - REC";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
+        subject = "Science - REC";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     } else if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
-        subject = "Arabic";
-        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+        subject = "UAE SS";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     } else if ((hour == 10 && min <= 30) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
-        subject = "Arabic";
-        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+        subject = "AP";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     };
 
     //Fourth Period
     if ((hour == 10 && min >= 30) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
-        subject = "English FLD";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
+        subject = "Arabic - FLD";
+        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
     } else if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
-        subject = "PE - FLD";
-        link = "https://us02web.zoom.us/j/87052704208?pwd=NTVkN0c4RXhDWXZlRXNvRUZLWmtPUT09";
+        subject = "AP - FLD";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     } else if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
-        subject = "Filipino - REC";
-        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+        subject = "Math - REC";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     } else if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
-        subject = "Arabic - FLD";
-        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+        subject = "UAESS - FLD";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     } else if ((hour >= 10 && min >= 30) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
-        subject = "Arabic - FLD";
-        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+        subject = "AP - FLD";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     };
     if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
-        subject = "English FLD";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
+        subject = "Arabic - FLD";
+        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
     } else if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
-        subject = "PE - FLD";
-        link = "https://us02web.zoom.us/j/87052704208?pwd=NTVkN0c4RXhDWXZlRXNvRUZLWmtPUT09";
+        subject = "AP - FLD";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     } else if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
-        subject = "Filipino - REC";
-        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+        subject = "Math - REC";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     } else if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
-        subject = "Arabic - FLD";
-        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+        subject = "UAESS - FLD";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     } else if (hour == 11 && min <= 15 && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
-        subject = "Arabic - FLD";
-        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+        subject = "AP - FLD";
+        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
     }
 
     //5th Period
     if ((hour == 11 && min >= 15) && !isWeekend && (displayDay == "Sunday") && am_pm == "AM") {
-        subject = "Math";
-        link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+        subject = "Filipino";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
     } else if ((hour == 11 && min >= 15) && !isWeekend && (displayDay == "Monday") && am_pm == "AM") {
-        subject = "Science";
-        link = "https://bit.ly/TPS-Science_MsDonna";
+        subject = "Filipino";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
     } else if ((hour == 11 && min >= 15) && !isWeekend && (displayDay == "Tuesday") && am_pm == "AM") {
-        subject = "Math - REC";
-        link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+        subject = "MEC";
+        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09";
     } else if ((hour == 11 && min >= 15) && !isWeekend && (displayDay == "Wednesday") && am_pm == "AM") {
-        subject = "English";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
-    } else if ((hour == 11 && min >= 15) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
         subject = "Math";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+    } else if ((hour == 11 && min >= 15) && !isWeekend && (displayDay == "Thursday") && am_pm == "AM") {
+        subject = "PE/Health";
+        link = "https://us02web.zoom.us/j/89877661443?pwd=T0VlNGNtYlFyUTNsN2l0aGdvUWlFUT09";
     }
     if ((hour == 12) && !isWeekend && (displayDay == "Sunday")) {
-        subject = "Math";
-        link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+        subject = "Filipino";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
     } else if ((hour == 12) && !isWeekend && (displayDay == "Monday") ) {
-        subject = "Science";
-        link = "https://bit.ly/TPS-Science_MsDonna";
+        subject = "Filipino";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
     } else if ((hour == 12) && !isWeekend && (displayDay == "Tuesday")) {
-        subject = "Math - REC";
-        link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+        subject = "MEC";
+        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09";
     } else if ((hour == 12) && !isWeekend && (displayDay == "Wednesday")) {
-        subject = "English";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
-    } else if ((hour == 12) && !isWeekend && (displayDay == "Thursday")) {
         subject = "Math";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+    } else if ((hour == 12) && !isWeekend && (displayDay == "Thursday")) {
+        subject = "PE/Health";
+        link = "https://us02web.zoom.us/j/89877661443?pwd=T0VlNGNtYlFyUTNsN2l0aGdvUWlFUT09";
     }
 
     //lunch Break
@@ -293,89 +287,89 @@ function showTime() {
     }
     //6th Period
     if ((hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
-        subject = "Math - FLD";
-        link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+        subject = "Filipino - FLD";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
     } else if ((hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
-        subject = "Science - FLD";
-        link = "https://bit.ly/TPS-Science_MsDonna";
+        subject = "Filipino - FLD";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
     } else if ((hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
-        subject = "Science - REC";
-        link = "https://bit.ly/TPS-Science_MsDonna";
+        subject = "MEC - FLD";
+        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09";
     } else if ((hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
-        subject = "English - FLD";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
-    } else if ((hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Thursday") && am_pm == "PM") {
         subject = "Math - FLD";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+    } else if ((hour >= 12 && min >= 40) && !isWeekend && (displayDay == "Thursday") && am_pm == "PM") {
+        subject = "PE/Health - FLD";
+        link = "https://us02web.zoom.us/j/89877661443?pwd=T0VlNGNtYlFyUTNsN2l0aGdvUWlFUT09";
     }
 
     if (hour == 01 && min <= 20 && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
-        subject = "Math - FLD";
-        link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+        subject = "Filipino - FLD";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
     } else if ((hour == 01 && min <= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
-        subject = "Science - FLD";
-        link = "https://bit.ly/TPS-Science_MsDonna";
+        subject = "Filipino - FLD";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
     } else if ((hour == 01 && min <= 20) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
-        subject = "Science - REC";
-        link = "https://bit.ly/TPS-Science_MsDonna";
+        subject = "MEC - FLD";
+        link = "https://zoom.us/j/9443013776?pwd=K1pUc21aaEtmeFNEYkg0T0JxL0hmQT09";
     } else if ((hour == 01 && min <= 20) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
-        subject = "English - FLD";
-        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
-    } else if ((hour == 01 && min <= 20) && !isWeekend && (displayDay == "Thursday") && am_pm == "PM") {
         subject = "Math - FLD";
         link = "https://us02web.zoom.us/j/81500282176?pwd=OUdVZlIvQzNjSjVyNUZ1bEZhRHhaZz09";
+    } else if ((hour == 01 && min <= 20) && !isWeekend && (displayDay == "Thursday") && am_pm == "PM") {
+        subject = "PE/Health - FLD";
+        link = "https://us02web.zoom.us/j/89877661443?pwd=T0VlNGNtYlFyUTNsN2l0aGdvUWlFUT09";
     }
 
     //7th Period
     if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
-        subject = "AP";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
-    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
-        subject = "AP";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
-    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
-        subject = "TLE";
-        link = "https://us04web.zoom.us/j/8089598889?pwd=ck83Z0NZaEJnQmFyaTQwQkovdUxJQT09";
-    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
         subject = "Music";
-        link = "https://us02web.zoom.us/j/87052704208?pwd=NTVkN0c4RXhDWXZlRXNvRUZLWmtPUT09";
+        link = "https://us02web.zoom.us/j/89877661443?pwd=T0VlNGNtYlFyUTNsN2l0aGdvUWlFUT09";
+    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
+        subject = "Arabic";
+        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
+        subject = "Filipino - REC";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+    } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
+        subject = "Science";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     } else if ((hour == 01 && min >= 20) && !isWeekend && (displayDay == "Thursday") && am_pm == "PM") {
-        subject = "UAE SS";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
+        subject = "Science";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     }
     if ((hour == 2 && min >= 00) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
-        subject = "AP";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
-    } else if ((hour == 2 && min >= 00) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
-        subject = "AP";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
-    } else if ((hour == 2 && min >= 00) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
-        subject = "TLE";
-        link = "https://us04web.zoom.us/j/8089598889?pwd=ck83Z0NZaEJnQmFyaTQwQkovdUxJQT09";
-    } else if ((hour == 2 && min >= 00) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
         subject = "Music";
-        link = "https://us02web.zoom.us/j/87052704208?pwd=NTVkN0c4RXhDWXZlRXNvRUZLWmtPUT09";
+        link = "https://us02web.zoom.us/j/89877661443?pwd=T0VlNGNtYlFyUTNsN2l0aGdvUWlFUT09";
+    } else if ((hour == 2 && min >= 00) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
+        subject = "Arabic";
+        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
+    } else if ((hour == 2 && min >= 00) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
+        subject = "Filipino - REC";
+        link = "https://us02web.zoom.us/j/5028306988?pwd=QllVOGF3bmpPczBneFBBL1pXelJWZz09";
+    } else if ((hour == 2 && min >= 00) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
+        subject = "Science";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     } else if ((hour == 2 && min >= 00) && !isWeekend && (displayDay == "Thursday") && am_pm == "PM") {
-        subject = "UAE SS";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
+        subject = "Science";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     }
 
     //8th Period
     if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Sunday") && am_pm == "PM") {
-        subject = "AP - FLD";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
+        subject = "Arts - FLD";
+        link = "https://us02web.zoom.us/j/89877661443?pwd=T0VlNGNtYlFyUTNsN2l0aGdvUWlFUT09";
     } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Monday") && am_pm == "PM") {
-        subject = "AP - REC";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
+        subject = "Arabic - FLD";
+        link = "https://us02web.zoom.us/j/9851884971?pwd=WWEvTDNUcFZ6ZUNzcVAwak50Wk9uQT09";
     } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Tuesday") && am_pm == "PM") {
-        subject = "TLE - FLD";
-        link = "https://us04web.zoom.us/j/8089598889?pwd=ck83Z0NZaEJnQmFyaTQwQkovdUxJQT09";
+        subject = "English - REC";
+        link = "https://us04web.zoom.us/j/5499489330?pwd=VU4wRE9NUVRLdHUwUVNCRWxBZUJ2dz09";
     } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Wednesday") && am_pm == "PM") {
-        subject = "Arts";
-        link = "https://us02web.zoom.us/j/87052704208?pwd=NTVkN0c4RXhDWXZlRXNvRUZLWmtPUT09";
+        subject = "Science - FLD";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     } else if ((hour <= 2 && min <= 50) && (hour >= 2 && min >= 05) && !isWeekend && (displayDay == "Thursday") && am_pm == "PM") {
-        subject = "UAE SS - FLD";
-        link = "https://us02web.zoom.us/j/4608858066?pwd=d0VGWVZUT0RhNk54YUVVbTBEREM4dz09";
+        subject = "Science - FLD";
+        link = "https://bit.ly/TPS-Science_MsDonna";
     }
 
     document.getElementById("clock")
